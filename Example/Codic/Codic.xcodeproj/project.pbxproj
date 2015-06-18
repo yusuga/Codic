@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B83A35761B33282400CBC40D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35751B33282400CBC40D /* main.m */; };
+		B83A35791B33282400CBC40D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35781B33282400CBC40D /* AppDelegate.m */; };
+		B83A357F1B33282400CBC40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83A357D1B33282400CBC40D /* Main.storyboard */; };
+		B83A35811B33282400CBC40D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83A35801B33282400CBC40D /* Images.xcassets */; };
+		B83A35841B33282400CBC40D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83A35821B33282400CBC40D /* LaunchScreen.xib */; };
+		B83A35901B33282400CBC40D /* CodicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A358F1B33282400CBC40D /* CodicTests.m */; };
+		B83A359F1B33293300CBC40D /* CodicAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A359E1B33293300CBC40D /* CodicAPIClient.m */; };
+		B83A35A31B332D1000CBC40D /* CodicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35A21B332D1000CBC40D /* CodicModel.m */; };
+		B83A35A61B332D2E00CBC40D /* CodicCEDSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35A51B332D2E00CBC40D /* CodicCEDSearchResult.m */; };
+		B83A35AA1B33300900CBC40D /* NSArray+Codic.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35A91B33300900CBC40D /* NSArray+Codic.m */; };
+		B83A35AF1B33332500CBC40D /* CEDSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35AE1B33332500CBC40D /* CEDSearchViewController.m */; };
+		D26F8889321C5AB670F8B3AD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526345FD8208428A3DF5C8E5 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B83A358A1B33282400CBC40D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B83A35681B33282400CBC40D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B83A356F1B33282400CBC40D;
+			remoteInfo = Codic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		216F41BF26E10925145005AE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		526345FD8208428A3DF5C8E5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83A35701B33282400CBC40D /* Codic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83A35741B33282400CBC40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83A35751B33282400CBC40D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B83A35771B33282400CBC40D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B83A35781B33282400CBC40D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B83A357E1B33282400CBC40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B83A35801B33282400CBC40D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B83A35831B33282400CBC40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B83A35891B33282400CBC40D /* CodicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83A358E1B33282400CBC40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83A358F1B33282400CBC40D /* CodicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodicTests.m; sourceTree = "<group>"; };
+		B83A359D1B33293300CBC40D /* CodicAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodicAPIClient.h; sourceTree = "<group>"; };
+		B83A359E1B33293300CBC40D /* CodicAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodicAPIClient.m; sourceTree = "<group>"; };
+		B83A35A11B332D1000CBC40D /* CodicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodicModel.h; sourceTree = "<group>"; };
+		B83A35A21B332D1000CBC40D /* CodicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodicModel.m; sourceTree = "<group>"; };
+		B83A35A41B332D2E00CBC40D /* CodicCEDSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodicCEDSearchResult.h; sourceTree = "<group>"; };
+		B83A35A51B332D2E00CBC40D /* CodicCEDSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodicCEDSearchResult.m; sourceTree = "<group>"; };
+		B83A35A81B33300900CBC40D /* NSArray+Codic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Codic.h"; sourceTree = "<group>"; };
+		B83A35A91B33300900CBC40D /* NSArray+Codic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Codic.m"; sourceTree = "<group>"; };
+		B83A35AB1B33318D00CBC40D /* CodicModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodicModels.h; sourceTree = "<group>"; };
+		B83A35AD1B33332500CBC40D /* CEDSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEDSearchViewController.h; sourceTree = "<group>"; };
+		B83A35AE1B33332500CBC40D /* CEDSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEDSearchViewController.m; sourceTree = "<group>"; };
+		DD08C811EEE8B72066E332C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B83A356D1B33282400CBC40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26F8889321C5AB670F8B3AD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83A35861B33282400CBC40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BC4B3B0AADA0717671C2CCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				216F41BF26E10925145005AE /* Pods.debug.xcconfig */,
+				DD08C811EEE8B72066E332C8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E2A8B65D045792D1B23165A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				526345FD8208428A3DF5C8E5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B83A35671B33282400CBC40D = {
+			isa = PBXGroup;
+			children = (
+				B83A35721B33282400CBC40D /* Codic */,
+				B83A35991B3328C100CBC40D /* Codic */,
+				B83A358C1B33282400CBC40D /* CodicTests */,
+				B83A35711B33282400CBC40D /* Products */,
+				6BC4B3B0AADA0717671C2CCB /* Pods */,
+				6E2A8B65D045792D1B23165A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B83A35711B33282400CBC40D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B83A35701B33282400CBC40D /* Codic.app */,
+				B83A35891B33282400CBC40D /* CodicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B83A35721B33282400CBC40D /* Codic */ = {
+			isa = PBXGroup;
+			children = (
+				B83A35771B33282400CBC40D /* AppDelegate.h */,
+				B83A35781B33282400CBC40D /* AppDelegate.m */,
+				B83A35AC1B33330D00CBC40D /* API ViewController */,
+				B83A357D1B33282400CBC40D /* Main.storyboard */,
+				B83A35801B33282400CBC40D /* Images.xcassets */,
+				B83A35821B33282400CBC40D /* LaunchScreen.xib */,
+				B83A35731B33282400CBC40D /* Supporting Files */,
+			);
+			path = Codic;
+			sourceTree = "<group>";
+		};
+		B83A35731B33282400CBC40D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B83A35741B33282400CBC40D /* Info.plist */,
+				B83A35751B33282400CBC40D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B83A358C1B33282400CBC40D /* CodicTests */ = {
+			isa = PBXGroup;
+			children = (
+				B83A358F1B33282400CBC40D /* CodicTests.m */,
+				B83A358D1B33282400CBC40D /* Supporting Files */,
+			);
+			path = CodicTests;
+			sourceTree = "<group>";
+		};
+		B83A358D1B33282400CBC40D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B83A358E1B33282400CBC40D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B83A35991B3328C100CBC40D /* Codic */ = {
+			isa = PBXGroup;
+			children = (
+				B83A359D1B33293300CBC40D /* CodicAPIClient.h */,
+				B83A359E1B33293300CBC40D /* CodicAPIClient.m */,
+				B83A35A01B332CFE00CBC40D /* Model */,
+				B83A35A71B332FEE00CBC40D /* Category */,
+			);
+			name = Codic;
+			path = ../../Classes/Codic;
+			sourceTree = "<group>";
+		};
+		B83A35A01B332CFE00CBC40D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B83A35AB1B33318D00CBC40D /* CodicModels.h */,
+				B83A35A11B332D1000CBC40D /* CodicModel.h */,
+				B83A35A21B332D1000CBC40D /* CodicModel.m */,
+				B83A35A41B332D2E00CBC40D /* CodicCEDSearchResult.h */,
+				B83A35A51B332D2E00CBC40D /* CodicCEDSearchResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B83A35A71B332FEE00CBC40D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B83A35A81B33300900CBC40D /* NSArray+Codic.h */,
+				B83A35A91B33300900CBC40D /* NSArray+Codic.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B83A35AC1B33330D00CBC40D /* API ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B83A35AD1B33332500CBC40D /* CEDSearchViewController.h */,
+				B83A35AE1B33332500CBC40D /* CEDSearchViewController.m */,
+			);
+			name = "API ViewController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B83A356F1B33282400CBC40D /* Codic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B83A35931B33282400CBC40D /* Build configuration list for PBXNativeTarget "Codic" */;
+			buildPhases = (
+				A5239B4E7BFAE1ED40BFC504 /* Check Pods Manifest.lock */,
+				B83A356C1B33282400CBC40D /* Sources */,
+				B83A356D1B33282400CBC40D /* Frameworks */,
+				B83A356E1B33282400CBC40D /* Resources */,
+				7273841081009FA498D06F2B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Codic;
+			productName = Codic;
+			productReference = B83A35701B33282400CBC40D /* Codic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B83A35881B33282400CBC40D /* CodicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B83A35961B33282400CBC40D /* Build configuration list for PBXNativeTarget "CodicTests" */;
+			buildPhases = (
+				B83A35851B33282400CBC40D /* Sources */,
+				B83A35861B33282400CBC40D /* Frameworks */,
+				B83A35871B33282400CBC40D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B83A358B1B33282400CBC40D /* PBXTargetDependency */,
+			);
+			name = CodicTests;
+			productName = CodicTests;
+			productReference = B83A35891B33282400CBC40D /* CodicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B83A35681B33282400CBC40D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Yu Sugawara";
+				TargetAttributes = {
+					B83A356F1B33282400CBC40D = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B83A35881B33282400CBC40D = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = B83A356F1B33282400CBC40D;
+					};
+				};
+			};
+			buildConfigurationList = B83A356B1B33282400CBC40D /* Build configuration list for PBXProject "Codic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B83A35671B33282400CBC40D;
+			productRefGroup = B83A35711B33282400CBC40D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B83A356F1B33282400CBC40D /* Codic */,
+				B83A35881B33282400CBC40D /* CodicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B83A356E1B33282400CBC40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83A357F1B33282400CBC40D /* Main.storyboard in Resources */,
+				B83A35841B33282400CBC40D /* LaunchScreen.xib in Resources */,
+				B83A35811B33282400CBC40D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83A35871B33282400CBC40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7273841081009FA498D06F2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5239B4E7BFAE1ED40BFC504 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B83A356C1B33282400CBC40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83A35A61B332D2E00CBC40D /* CodicCEDSearchResult.m in Sources */,
+				B83A35A31B332D1000CBC40D /* CodicModel.m in Sources */,
+				B83A359F1B33293300CBC40D /* CodicAPIClient.m in Sources */,
+				B83A35AA1B33300900CBC40D /* NSArray+Codic.m in Sources */,
+				B83A35AF1B33332500CBC40D /* CEDSearchViewController.m in Sources */,
+				B83A35791B33282400CBC40D /* AppDelegate.m in Sources */,
+				B83A35761B33282400CBC40D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83A35851B33282400CBC40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83A35901B33282400CBC40D /* CodicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B83A358B1B33282400CBC40D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B83A356F1B33282400CBC40D /* Codic */;
+			targetProxy = B83A358A1B33282400CBC40D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B83A357D1B33282400CBC40D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B83A357E1B33282400CBC40D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B83A35821B33282400CBC40D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B83A35831B33282400CBC40D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B83A35911B33282400CBC40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B83A35921B33282400CBC40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B83A35941B33282400CBC40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216F41BF26E10925145005AE /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Codic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B83A35951B33282400CBC40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD08C811EEE8B72066E332C8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Codic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B83A35971B33282400CBC40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codic.app/Codic";
+			};
+			name = Debug;
+		};
+		B83A35981B33282400CBC40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codic.app/Codic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B83A356B1B33282400CBC40D /* Build configuration list for PBXProject "Codic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B83A35911B33282400CBC40D /* Debug */,
+				B83A35921B33282400CBC40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B83A35931B33282400CBC40D /* Build configuration list for PBXNativeTarget "Codic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B83A35941B33282400CBC40D /* Debug */,
+				B83A35951B33282400CBC40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B83A35961B33282400CBC40D /* Build configuration list for PBXNativeTarget "CodicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B83A35971B33282400CBC40D /* Debug */,
+				B83A35981B33282400CBC40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B83A35681B33282400CBC40D /* Project object */;
+}
