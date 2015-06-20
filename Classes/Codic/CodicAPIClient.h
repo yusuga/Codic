@@ -10,13 +10,17 @@
 #import <AFNetworking/AFNetworking.h>
 #import "CodicModels.h"
 
-typedef void (^CodicAPIClientRequestCEDSearchCompletion)(AFHTTPRequestOperation *operation, CodicCEDSearchResult *result, NSError *error);
+typedef void (^CodicAPIClientRequestSearchCompletion)(AFHTTPRequestOperation *operation, CodicSearchResult *result, NSError *error);
+typedef void (^CodicAPIClientRequestTranslateCompletion)(AFHTTPRequestOperation *operation, CodicTranslateResult *result, NSError *error);
 
 @interface CodicAPIClient : NSObject
 
 + (instancetype)sharedClient;
 
-- (AFHTTPRequestOperation *)requestCEDSearchWithQuery:(NSString *)query
-                                           completion:(CodicAPIClientRequestCEDSearchCompletion)completion;
+- (AFHTTPRequestOperation *)requestSearchWithQuery:(NSString *)query
+                                        completion:(CodicAPIClientRequestSearchCompletion)completion;
+
+- (AFHTTPRequestOperation *)requestTranslateWithQuery:(NSString *)query
+                                           completion:(CodicAPIClientRequestTranslateCompletion)completion;
 
 @end

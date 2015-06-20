@@ -1,15 +1,15 @@
 //
-//  CodicCEDSearchResult.m
+//  CodicSearchResult.m
 //  Codic
 //
 //  Created by Yu Sugawara on 6/19/15.
 //  Copyright (c) 2015 Yu Sugawara. All rights reserved.
 //
 
-#import "CodicCEDSearchResult.h"
+#import "CodicSearchResult.h"
 #import "NSArray+Codic.h"
 
-@implementation CodicCEDSearchResult
+@implementation CodicSearchResult
 {
     NSArray *_data;
 }
@@ -23,7 +23,7 @@
 {
     if (!_data) {
         _data = [self.dictionary[@"data"] ys_map:^id(id obj, NSUInteger idx) {
-            return [[CodicCED alloc] initWithDictionary:obj];
+            return [[CodicSearch alloc] initWithDictionary:obj];
         }];
     }
     return _data;
@@ -31,7 +31,7 @@
 
 @end
 
-@implementation CodicCED
+@implementation CodicSearch
 
 - (NSInteger)id
 {

@@ -15,9 +15,11 @@
 		B83A35901B33282400CBC40D /* CodicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A358F1B33282400CBC40D /* CodicTests.m */; };
 		B83A359F1B33293300CBC40D /* CodicAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A359E1B33293300CBC40D /* CodicAPIClient.m */; };
 		B83A35A31B332D1000CBC40D /* CodicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35A21B332D1000CBC40D /* CodicModel.m */; };
-		B83A35A61B332D2E00CBC40D /* CodicCEDSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35A51B332D2E00CBC40D /* CodicCEDSearchResult.m */; };
+		B83A35A61B332D2E00CBC40D /* CodicSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35A51B332D2E00CBC40D /* CodicSearchResult.m */; };
 		B83A35AA1B33300900CBC40D /* NSArray+Codic.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35A91B33300900CBC40D /* NSArray+Codic.m */; };
-		B83A35AF1B33332500CBC40D /* CEDSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35AE1B33332500CBC40D /* CEDSearchViewController.m */; };
+		B83A35AF1B33332500CBC40D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35AE1B33332500CBC40D /* SearchViewController.m */; };
+		B83EEBA61B35CF5700D66BE6 /* CodicTranslateResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B83EEBA51B35CF5700D66BE6 /* CodicTranslateResult.m */; };
+		B83EEBA91B35D31500D66BE6 /* TranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83EEBA81B35D31500D66BE6 /* TranslateViewController.m */; };
 		D26F8889321C5AB670F8B3AD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526345FD8208428A3DF5C8E5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,13 +51,17 @@
 		B83A359E1B33293300CBC40D /* CodicAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodicAPIClient.m; sourceTree = "<group>"; };
 		B83A35A11B332D1000CBC40D /* CodicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodicModel.h; sourceTree = "<group>"; };
 		B83A35A21B332D1000CBC40D /* CodicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodicModel.m; sourceTree = "<group>"; };
-		B83A35A41B332D2E00CBC40D /* CodicCEDSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodicCEDSearchResult.h; sourceTree = "<group>"; };
-		B83A35A51B332D2E00CBC40D /* CodicCEDSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodicCEDSearchResult.m; sourceTree = "<group>"; };
+		B83A35A41B332D2E00CBC40D /* CodicSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodicSearchResult.h; sourceTree = "<group>"; };
+		B83A35A51B332D2E00CBC40D /* CodicSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodicSearchResult.m; sourceTree = "<group>"; };
 		B83A35A81B33300900CBC40D /* NSArray+Codic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Codic.h"; sourceTree = "<group>"; };
 		B83A35A91B33300900CBC40D /* NSArray+Codic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Codic.m"; sourceTree = "<group>"; };
 		B83A35AB1B33318D00CBC40D /* CodicModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodicModels.h; sourceTree = "<group>"; };
-		B83A35AD1B33332500CBC40D /* CEDSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEDSearchViewController.h; sourceTree = "<group>"; };
-		B83A35AE1B33332500CBC40D /* CEDSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEDSearchViewController.m; sourceTree = "<group>"; };
+		B83A35AD1B33332500CBC40D /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		B83A35AE1B33332500CBC40D /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		B83EEBA41B35CF5700D66BE6 /* CodicTranslateResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodicTranslateResult.h; sourceTree = "<group>"; };
+		B83EEBA51B35CF5700D66BE6 /* CodicTranslateResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodicTranslateResult.m; sourceTree = "<group>"; };
+		B83EEBA71B35D31500D66BE6 /* TranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateViewController.h; sourceTree = "<group>"; };
+		B83EEBA81B35D31500D66BE6 /* TranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateViewController.m; sourceTree = "<group>"; };
 		DD08C811EEE8B72066E332C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,8 +180,10 @@
 				B83A35AB1B33318D00CBC40D /* CodicModels.h */,
 				B83A35A11B332D1000CBC40D /* CodicModel.h */,
 				B83A35A21B332D1000CBC40D /* CodicModel.m */,
-				B83A35A41B332D2E00CBC40D /* CodicCEDSearchResult.h */,
-				B83A35A51B332D2E00CBC40D /* CodicCEDSearchResult.m */,
+				B83A35A41B332D2E00CBC40D /* CodicSearchResult.h */,
+				B83A35A51B332D2E00CBC40D /* CodicSearchResult.m */,
+				B83EEBA41B35CF5700D66BE6 /* CodicTranslateResult.h */,
+				B83EEBA51B35CF5700D66BE6 /* CodicTranslateResult.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,8 +200,10 @@
 		B83A35AC1B33330D00CBC40D /* API ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B83A35AD1B33332500CBC40D /* CEDSearchViewController.h */,
-				B83A35AE1B33332500CBC40D /* CEDSearchViewController.m */,
+				B83A35AD1B33332500CBC40D /* SearchViewController.h */,
+				B83A35AE1B33332500CBC40D /* SearchViewController.m */,
+				B83EEBA71B35D31500D66BE6 /* TranslateViewController.h */,
+				B83EEBA81B35D31500D66BE6 /* TranslateViewController.m */,
 			);
 			name = "API ViewController";
 			sourceTree = "<group>";
@@ -333,11 +343,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83A35A61B332D2E00CBC40D /* CodicCEDSearchResult.m in Sources */,
+				B83EEBA61B35CF5700D66BE6 /* CodicTranslateResult.m in Sources */,
+				B83EEBA91B35D31500D66BE6 /* TranslateViewController.m in Sources */,
+				B83A35A61B332D2E00CBC40D /* CodicSearchResult.m in Sources */,
 				B83A35A31B332D1000CBC40D /* CodicModel.m in Sources */,
 				B83A359F1B33293300CBC40D /* CodicAPIClient.m in Sources */,
 				B83A35AA1B33300900CBC40D /* NSArray+Codic.m in Sources */,
-				B83A35AF1B33332500CBC40D /* CEDSearchViewController.m in Sources */,
+				B83A35AF1B33332500CBC40D /* SearchViewController.m in Sources */,
 				B83A35791B33282400CBC40D /* AppDelegate.m in Sources */,
 				B83A35761B33282400CBC40D /* main.m in Sources */,
 			);

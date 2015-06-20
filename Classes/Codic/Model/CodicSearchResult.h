@@ -1,5 +1,5 @@
 //
-//  CodicCEDSearchResult.h
+//  CodicSearchResult.h
 //  Codic
 //
 //  Created by Yu Sugawara on 6/19/15.
@@ -8,14 +8,14 @@
 
 #import "CodicModel.h"
 
-@interface CodicCEDSearchResult : CodicModel
+@interface CodicSearchResult : CodicModel
 
 - (NSString *)status;           // e.g. success
 - (NSArray *)data;              // NSArray of CodicCED
 
 @end
 
-@interface CodicCED : CodicModel
+@interface CodicSearch : CodicModel
 
 - (NSInteger)id;                // e.g. 43432
 - (NSString *)title;            // e.g. request

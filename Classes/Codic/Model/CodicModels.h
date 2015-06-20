@@ -6,4 +6,5 @@
 //  Copyright (c) 2015 Yu Sugawara. All rights reserved.
 //
 
-#import "CodicCEDSearchResult.h"
+#import "CodicSearchResult.h"
+#import "CodicTranslateResult.h"

@@ -8,9 +8,10 @@
 
 #import "CodicAPIClient.h"
 
-static NSString * kCodicBaseURL = @"https://codic.jp";
+static NSString * const kCodicBaseURLString = @"https://codic.jp";
 
-static NSString * kCodicSearchURL = @"/-/ced/search.json";
+static NSString * const kCodicSearchURLString = @"/-/ced/search.json";
+static NSString * const kCodicTranslateURLString = @"/-/engine/translate.json";
 
 typedef void (^CodicAPIClientRequestCompletion)(AFHTTPRequestOperation *operation, id responseObject, NSError *error);
 
@@ -37,6 +38,8 @@ typedef void (^CodicAPIClientRequestCompletion)(AFHTTPRequestOperation *operatio
     if (self = [super init]) {
         self.client = [AFHTTPRequestOperationManager manager];
         
+        [self.client.requestSerializer setValue:@"XMLHttpRequest" forHTTPHeaderField:@"X-Requested-With"];
+        
         AFJSONResponseSerializer *serializer =[AFJSONResponseSerializer serializer];
         serializer.removesKeysWithNullValues = YES;
         self.client.responseSerializer = serializer;
@@ -44,8 +47,8 @@ typedef void (^CodicAPIClientRequestCompletion)(AFHTTPRequestOperation *operatio
     return self;
 }
 
-- (AFHTTPRequestOperation *)requestCEDSearchWithQuery:(NSString *)query
-                                           completion:(CodicAPIClientRequestCEDSearchCompletion)completion
+- (AFHTTPRequestOperation *)requestSearchWithQuery:(NSString *)query
+                                        completion:(CodicAPIClientRequestSearchCompletion)completion
 {
     NSParameterAssert(completion);
     
@@ -53,30 +56,40 @@ typedef void (^CodicAPIClientRequestCompletion)(AFHTTPRequestOperation *operatio
      *  https://codic.jp/-/ced/search.json?query=QUERY
      */
     
-    return [self requestWithResource:kCodicSearchURL
-                          parameters:@{@"query" : query}
-                          completion:^(AFHTTPRequestOperation *operation, id responseObject, NSError *error) {
-                              completion(operation,
-                                         error ? nil : [[CodicCEDSearchResult alloc] initWithDictionary:responseObject],
-                                         error);
-                          }];
-}
-
-- (AFHTTPRequestOperation *)requestWithResource:(NSString *)resource
-                                     parameters:(NSDictionary *)parameters
-                                     completion:(CodicAPIClientRequestCompletion)completion
-{
-    NSParameterAssert(completion);
-    
-    NSURL *url = [NSURL URLWithString:resource relativeToURL:[NSURL URLWithString:kCodicBaseURL]];
-    
-    return [self.client GET:url.absoluteString
-                 parameters:parameters
+    return [self.client GET:[self codicURLStringWithResource:kCodicSearchURLString]
+                 parameters:@{@"query" : query}
                     success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                        completion(operation, responseObject, nil);
+                        completion(operation, [[CodicSearchResult alloc] initWithDictionary:responseObject], nil);
                     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                         completion(operation, nil, error);
                     }];
+}
+
+- (AFHTTPRequestOperation *)requestTranslateWithQuery:(NSString *)query
+                                           completion:(CodicAPIClientRequestTranslateCompletion)completion
+{
+    /**
+     *  https://codic.jp/-/engine/translate.json
+     */
+    
+    return [self.client POST:[self codicURLStringWithResource:kCodicTranslateURLString]
+                  parameters:@{@"acronym_style" : @"literal",
+                               @"casing" : @"lower underscore",
+                               @"dictionary_id" : @"0",
+                               @"data[0][id]" : @"0", // dummy
+                               @"data[0][text]" : query}
+                     success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                         completion(operation, [[CodicTranslateResult alloc] initWithDictionary:responseObject], nil);
+                     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                         completion(operation, nil, error);
+                     }];
+}
+
+#pragma mark - Private
+
+- (NSString *)codicURLStringWithResource:(NSString *)resource
+{
+    return [NSURL URLWithString:resource relativeToURL:[NSURL URLWithString:kCodicBaseURLString]].absoluteString;
 }
 
 @end
