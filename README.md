@@ -1,11 +1,9 @@
-# Codic API
+# codic (v3) API
 
 深夜の息抜きにCodicのUndocumentなAPIをいじってみる。
 運営に怒られたら即消します。
 
-## ToDo
-
-- Alfred workflowに移植したい
+engine/translateを[Alfred workflow](https://github.com/yusuga/alfred-codic-workflow)にした。
 
 ## API
 
